@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./ImageGrid.css";
 import CharacterList from "../../components/Characters.json";
+import ImageDiv from "../ImageDiv/ImageDiv";
 
 
 class ImageGrid extends Component {
@@ -14,7 +15,6 @@ class ImageGrid extends Component {
         };
     }
     componentDidMount() {
-        console.log(CharacterList);
         this.loadGrid();
     }
 
@@ -22,12 +22,15 @@ class ImageGrid extends Component {
         return (
             <div className="character">
                 {CharacterList.map(
-                    res => <div key={res}>
+                    res => (<div key={res}>
                         <img className="characterImage" src={res.src} alt={res.alt}></img>
                     </div>
+                    // (this.setState({
+                    //     image: this.res.src,
+                    //     alt: this.res.alt
+                    // })))
 
-                )}
-
+                ))}
             </div>
         )
     }
@@ -36,11 +39,10 @@ class ImageGrid extends Component {
     render() {
         return (
             <div>
-                {this.state.image}
-
+                <div className="row">
+                    <ImageDiv image={this.image} />
+                </div>
             </div >
-
-
         )
     }
 }

@@ -3,6 +3,7 @@ import './App.css';
 import NavBar from "./components/NavBar/NavBar";
 import Jumbotron from "./components/Jumbotron/Jumbotron";
 import ImageGrid from './components/ImageGrid/ImageGrid';
+import ImageDiv from "./components/ImageDiv/ImageDiv"
 import Footer from "./components/Footer/Footer";
 
 function App() {
@@ -10,7 +11,9 @@ function App() {
     <div >
       <NavBar />
       <Jumbotron />
-      <ImageGrid />
+      <ImageGrid >
+        <ImageDiv />
+      </ImageGrid >
       <Footer />
     </div >
   );

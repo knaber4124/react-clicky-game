@@ -1,3 +1,8 @@
 .imageGrid{
     text-align: center;
 }
+
+.characterImage{
+    height:100px;
+    width:100px;
+}
