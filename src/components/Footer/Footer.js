@@ -5,7 +5,7 @@ function Footer() {
     return (
         <div>
 
-            <div className=" row footer fixed-bottom">
+            <div className="row footer sticky-bottom">
                 <div className="col-4-md">
                 </div>
                 <div className="col-4-md copy">

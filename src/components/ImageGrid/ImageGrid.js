@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import "./ImageGrid.css";
-import CharacterList from "../../components/Characters.json";
-import ImageDiv from "../ImageDiv/ImageDiv";
+// import CharacterList from "../../components/Characters.json";
+// import Characters from "../ImageCard/ImageCard";
+// import ImageDiv from "../ImageDiv/ImageDiv";
+import Characters from "../ImageCard/ImageCard";
 
 
 class ImageGrid extends Component {
@@ -14,33 +16,13 @@ class ImageGrid extends Component {
             topScore: "",
         };
     }
-    componentDidMount() {
-        this.loadGrid();
-    }
-
-    loadGrid = () => {
-        return (
-            <div className="character">
-                {CharacterList.map(
-                    res => (<div key={res}>
-                        <img className="characterImage" src={res.src} alt={res.alt}></img>
-                    </div>
-                    // (this.setState({
-                    //     image: this.res.src,
-                    //     alt: this.res.alt
-                    // })))
-
-                ))}
-            </div>
-        )
-    }
 
 
     render() {
         return (
             <div>
                 <div className="row">
-                    <ImageDiv image={this.image} />
+                    <Characters />
                 </div>
             </div >
         )
