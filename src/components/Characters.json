@@ -1,0 +1,63 @@
+[
+    {
+        "id": 1,
+        "src": "./images/anakin.jpg",
+        "alt": "Anakin Skywalker"
+    },
+    {
+        "id": 2,
+        "src": "./images/bobaFett.jpg",
+        "alt": "Boba Fett"
+    },
+    {
+        "id": 3,
+        "src": "./images/chewbacca.jpg",
+        "alt": "Chewbacca"
+    },
+    {
+        "id": 4,
+        "src": "./images/darthMaul.jpg",
+        "alt": "Darth Maul"
+    },
+    {
+        "id": 5,
+        "src": "./images/hanSolo.jps",
+        "alt": "Han Solo"
+    },
+    {
+        "id": 6,
+        "src": "./images/ig88.jpg",
+        "alt": "IG-88"
+    },
+    {
+        "id": 7,
+        "src": "./images/lukeSkywalker.jpg",
+        "alt": "Luke Skywalker"
+    },
+    {
+        "id": 8,
+        "src": "./images/obiWan.jpg",
+        "alt": "Obi Wan"
+    },
+    {
+        "id": 9,
+        "src": "./images/palpatine.jpg",
+        "alt": "Palpatine"
+    },
+    {
+        "id": 10,
+        "src": "./images/princessLeia.jpg",
+        "alt": "Princess Leia"
+    },
+    {
+        "id": 11,
+        "src": "./images/yoda.jpg",
+        "alt": "Yoda"
+    },
+    {
+        "id": 12,
+        "src": "./images/darthVader.jpg",
+        "alt": "Darth Vader"
+    }
+]
+
