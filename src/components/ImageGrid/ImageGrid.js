@@ -13,8 +13,7 @@ class ImageGrid extends Component {
             clicked: false,
             score: 0,
             topScore: "",
-            duplicate: "You Already Clicked on That Image",
-            original: "Good Job!"
+            message: ""
         };
     }
 
@@ -22,16 +21,17 @@ class ImageGrid extends Component {
         console.log("clicked");
         if (this.state.clicked === false) {
             let newScore = this.state.score + 1
-            console.log(this.state.original);
             console.log(newScore);
             this.setState({
                 clicked: true,
-                score: newScore
+                score: newScore,
+                message: "Good Job!"
             })
         }
         else if (this.state.clicked === true) {
-            console.log(this.state.duplicate);
             this.setState({
+                score: 0,
+                message: "You already clicked that image!"
 
             })
         }
@@ -46,7 +46,8 @@ class ImageGrid extends Component {
             <div>
                 <Characters
                     onClick={this.handleImageClick} />
-            </div>)
+            </div>
+        )
     }
 }
 

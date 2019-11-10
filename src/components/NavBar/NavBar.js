@@ -1,5 +1,6 @@
 import React from "react";
 import "./NavBar.css";
+import ImageGrid from "../ImageGrid/ImageGrid";
 
 function NavBar() {
   return (
@@ -10,10 +11,10 @@ function NavBar() {
           <h2>Clicky-Game</h2>
         </div>
         <div className="col-md-4 label">
-          <h2>Alert Result</h2>
+          <h2>{ImageGrid.message}</h2>
         </div>
         <div className="col-md-4 label">
-          <h2>Display Score</h2>
+          <h2>Score:{ImageGrid.score}</h2>
         </div>
       </div>
     </div>
