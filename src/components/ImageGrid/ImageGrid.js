@@ -11,21 +11,42 @@ class ImageGrid extends Component {
         super(props);
         this.state = {
             clicked: false,
-            image: "",
-            score: "",
+            score: 0,
             topScore: "",
+            duplicate: "You Already Clicked on That Image",
+            original: "Good Job!"
         };
+    }
+
+    handleImageClick = event => {
+        console.log("clicked");
+        if (this.state.clicked === false) {
+            let newScore = this.state.score + 1
+            console.log(this.state.original);
+            console.log(newScore);
+            this.setState({
+                clicked: true,
+                score: newScore
+            })
+        }
+        else if (this.state.clicked === true) {
+            console.log(this.state.duplicate);
+            this.setState({
+
+            })
+        }
+
+
+
     }
 
 
     render() {
         return (
             <div>
-                <div className="row">
-                    <Characters />
-                </div>
-            </div >
-        )
+                <Characters
+                    onClick={this.handleImageClick} />
+            </div>)
     }
 }
 

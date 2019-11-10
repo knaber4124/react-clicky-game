@@ -10,8 +10,7 @@ function App() {
     <div >
       <NavBar />
       <Jumbotron />
-      <ImageGrid >
-      </ImageGrid >
+      <ImageGrid />
       <Footer />
     </div >
   );
