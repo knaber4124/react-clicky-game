@@ -11,7 +11,7 @@ const Characters = (props) => {
     randomize();
 
     return (
-        <Row gutter={25}>
+        <Row gutter={15}>
             {CharacterList.map(res => <Col
                 xs={{ span: 4 }} sm={{ span: 3 }} md={{ span: 3 }} lg={{ span: 2 }} xl={{ span: 1 }}>
                 <img className="characterImage" onClick={props.onClick} src={res.src} alt={res.alt}></img>
