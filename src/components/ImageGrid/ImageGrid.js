@@ -12,28 +12,34 @@ class ImageGrid extends Component {
         this.state = {
             clicked: false,
             score: 0,
-            topScore: "",
+            highScore: 0,
             message: ""
         };
     }
 
-    handleImageClick = event => {
-        console.log("clicked");
+    handleImageClick = (props) => {
         if (this.state.clicked === false) {
-            let newScore = this.state.score + 1
+            let newScore = this.state.score + 1;
+            if (newScore > this.state.highScore) {
+                this.setState({
+                    highScore: newScore
+                })
+            }
             console.log(newScore);
             this.setState({
                 clicked: true,
                 score: newScore,
-                message: "Good Job!"
+                message: "Good Job! Keep Going!"
             })
+            console.log(this.state.message);
         }
         else if (this.state.clicked === true) {
             this.setState({
+                clicked: false,
                 score: 0,
-                message: "You already clicked that image!"
-
+                message: "You already clicked that image! Game Over!"
             })
+            console.log(this.state.message);
         }
 
 
